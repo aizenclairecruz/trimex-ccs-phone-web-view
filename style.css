@@ -1,0 +1,31 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  background-color: #A31D24;
+  color: #FFFFFF;
+}
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #A31D24;
+}
+.glass-pill {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+/* Prevent iOS auto-zoom when tapping inputs */
+@media screen and (max-width: 640px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}

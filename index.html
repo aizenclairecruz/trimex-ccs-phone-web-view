@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Trimex Colleges — College of Computer Studies (CCS)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '420px',
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px'
+        },
+        extend: {
+          colors: {
+            trimex: {
+              red: '#A31D24',
+              crimsonHover: '#82141A',
+              lightRed: '#FEE4E2',
+              softPink: '#FFF5F5',
+              onyx: '#14171A',
+              cardDark: '#1A1E24',
+              surface: '#F9FAFB',
+              borderSubtle: '#E5E7EB',
+              gold: '#C5A059'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            'kent': '0 10px 30px -10px rgba(20, 23, 26, 0.06)',
+            'elevated': '0 20px 40px -15px rgba(163, 29, 36, 0.12)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Separated Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-trimex-red selection:text-white min-h-screen flex flex-col custom-scroll overflow-x-hidden">
+
+  <!-- ==================== HEADER (Clean Editorial Bar - Mobile & Desktop Fluid) ==================== -->
+  <header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Authentic Dual Crest & Brand Typography -->
+      <div class="flex items-center gap-2 sm:gap-3.5 group shrink-0">
+        
+        <!-- Dual Crest Container -->
+        <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          
+          <!-- 1. Official Trimex 3-Bar Emblem -->
+          <a href="#home" class="h-9 w-9 sm:h-11 sm:w-11 rounded-md border border-slate-200 bg-white p-1 flex items-center justify-center shadow-sm overflow-hidden hover:scale-105 active:scale-95 transition-transform" title="Official Trimex Colleges Emblem">
+            <img 
+              src="trimex logooo.jpg" 
+              alt="Trimex Colleges Logo" 
+              class="w-full h-full object-contain"
+              onerror="this.src='trimex logo.png'; this.onerror=function(){ this.classList.add('hidden'); document.getElementById('trimexFallbackSvg').classList.remove('hidden'); }"
+            >
+            <svg id="trimexFallbackSvg" viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="38" width="80" height="52" rx="1" fill="#A31D24" />
+              <rect x="23.5" y="10" width="11" height="46" fill="#14171A" />
+              <rect x="44.5" y="10" width="11" height="46" fill="#14171A" />
+              <rect x="65.5" y="10" width="11" height="46" fill="#14171A" />
+            </svg>
+          </a>
+
+          <!-- 2. Permanent Official CCS Seal -->
+          <div class="h-9 w-9 sm:h-11 sm:w-11 rounded-full border border-red-200 bg-white p-0.5 flex items-center justify-center shadow-sm overflow-hidden hover:scale-105 active:scale-95 transition-transform" title="College of Computer Studies Official Seal">
+            <img 
+              id="ccsSealImg" 
+              src="ccs logo_2.jpg" 
+              alt="College of Computer Studies Seal" 
+              class="w-full h-full object-contain rounded-full"
+              onerror="this.src='ccs logo.jpg'; this.onerror=function(){ this.classList.add('hidden'); document.getElementById('ccsSealSvg').classList.remove('hidden'); }"
+            >
+            
+            <!-- Crisp High-Fidelity Vector Fallback if Image is loading -->
+            <svg id="ccsSealSvg" viewBox="0 0 200 200" class="w-full h-full hidden" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="97" fill="#6A1016" stroke="#42080B" stroke-width="2"/>
+              <circle cx="100" cy="100" r="85" fill="#520B10" stroke="#C5A059" stroke-width="1.5"/>
+              <path id="sealTextPath" d="M 22,100 A 78,78 0 1,1 178,100 A 78,78 0 1,1 22,100" fill="none"/>
+              <text fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="bold" font-size="12" letter-spacing="2.2">
+                <textPath href="#sealTextPath">COLLEGE OF COMPUTER STUDIES • TRIMEX •</textPath>
+              </text>
+              <circle cx="100" cy="100" r="62" fill="#3D0609" stroke="#E5E7EB" stroke-width="1"/>
+              <line x1="58" y1="100" x2="88" y2="100" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+              <line x1="72" y1="75" x2="72" y2="125" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="72" cy="75" r="14" fill="#FFFFFF" stroke="#A31D24" stroke-width="2"/>
+              <path d="M66 76a4 4 0 0 1 8-2 3.5 3.5 0 0 1 4 3.5h-12z" fill="#A31D24"/>
+              <circle cx="72" cy="125" r="14" fill="#FFFFFF" stroke="#14171A" stroke-width="2"/>
+              <rect x="66" y="125" width="12" height="7" fill="#A31D24"/>
+              <rect x="68" y="120" width="2" height="7" fill="#14171A"/>
+              <rect x="71" y="120" width="2" height="7" fill="#14171A"/>
+              <rect x="74" y="120" width="2" height="7" fill="#14171A"/>
+              <path d="M110 65 C125 65 140 75 142 92 C143 102 135 110 132 118 C128 126 128 135 125 142 L112 142 C114 135 115 126 118 120 C122 114 128 108 126 98 C125 85 116 78 105 78 Z" fill="#E2E8F0"/>
+              <circle cx="126" cy="94" r="3.5" fill="#38BDF8"/>
+              <path d="M120 110 h15 M116 122 h14" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+        </div>
+
+        <!-- Typography Lockup (Scaled for Small Mobile & Desktop) -->
+        <a href="#home" class="flex flex-col">
+          <div class="flex items-center gap-1">
+            <span class="font-serif font-black text-base xs:text-lg sm:text-xl tracking-tight text-slate-900 hover:text-trimex-red transition-colors">TRIMEX<span class="text-trimex-red">CONNECT</span></span>
+          </div>
+          <span class="text-[8.5px] xs:text-[9.5px] sm:text-[10px] uppercase tracking-wider font-bold text-slate-500 truncate max-w-[145px] xs:max-w-none">College of Computer Studies</span>
+        </a>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-slate-700">
+        <!-- 1. HOME -->
+        <a href="#home" class="nav-link text-trimex-red py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-trimex-red">
+          HOME
+        </a>
+
+        <!-- 2. GAZETTE (Clickable + Dropdown for Vol 1 & 2) -->
+        <div class="relative group py-2" id="gazetteNavDropdown">
+          <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="hover:text-trimex-red transition-colors flex items-center gap-1.5 py-1 cursor-pointer">
+            <span>GAZETTE</span>
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7"/></svg>
+            <span class="text-[9px] px-1.5 py-0.5 rounded bg-red-100 text-trimex-red font-semibold lowercase">vol. 1 &amp; 2</span>
+          </a>
+
+          <!-- Gazette Dropdown Menu -->
+          <div class="absolute left-0 top-full pt-2 w-64 hidden group-hover:block transition-all z-50">
+            <div class="bg-white rounded-md shadow-xl border border-slate-200 p-2 space-y-1">
+              <div class="px-3 py-2 border-b border-slate-100">
+                <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Trimex Official Publication</span>
+                <span class="text-xs font-bold text-slate-900">CCS Gazette Archive</span>
+              </div>
+              <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 rounded hover:bg-red-50 text-slate-800 hover:text-trimex-red transition-colors group/item">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded bg-red-100 text-trimex-red flex items-center justify-center font-bold text-xs">V1</div>
+                  <div>
+                    <div class="text-xs font-bold text-slate-900 group-hover/item:text-trimex-red">CCS Gazette Vol. 1</div>
+                    <div class="text-[10px] text-slate-500">Official Department Journal</div>
+                  </div>
+                </div>
+                <span class="text-slate-400 group-hover/item:translate-x-0.5 transition-transform text-xs">↗</span>
+              </a>
+
+              <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 rounded hover:bg-red-50 text-slate-800 hover:text-trimex-red transition-colors group/item">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded bg-red-100 text-trimex-red flex items-center justify-center font-bold text-xs">V2</div>
+                  <div>
+                    <div class="text-xs font-bold text-slate-900 group-hover/item:text-trimex-red">CCS Gazette Vol. 2</div>
+                    <div class="text-[10px] text-slate-500">Latest Editorial Release</div>
+                  </div>
+                </div>
+                <span class="text-slate-400 group-hover/item:translate-x-0.5 transition-transform text-xs">↗</span>
+              </a>
+
+              <div class="pt-1 border-t border-slate-100 px-3 py-1.5 flex items-center justify-between text-[10px]">
+                <a href="#gazette" class="text-slate-500 hover:text-trimex-red font-medium">Browse Gazette Stories ↓</a>
+                <span class="text-slate-400">trimexconnect.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. CCS-MS (Full 14-item Portal Dropdown in Exact Sequence) -->
+        <div class="relative group py-2" id="ccsmsNavDropdown">
+          <button class="hover:text-trimex-red transition-colors flex items-center gap-1.5 py-1 focus:outline-none cursor-pointer">
+            <span>CCS-MS</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 duration-200 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+
+          <!-- Dropdown Container Matching Exact Sequence from trimexconnect.com -->
+          <div class="absolute -left-20 top-full pt-2 w-[340px] hidden group-hover:block transition-all z-50">
+            <div class="bg-trimex-onyx text-white rounded-md shadow-2xl border border-slate-800 p-3 max-h-[82vh] overflow-y-auto custom-scroll">
+              <div class="px-3 py-2 border-b border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase font-bold tracking-wider text-red-400 block">TrimexConnect Management System</span>
+                  <span class="text-xs font-bold text-white">CCS-MS Online Portals (14 Services)</span>
+                </div>
+                <span class="text-[9px] px-1.5 py-0.5 bg-emerald-950 text-emerald-300 rounded border border-emerald-800">LIVE</span>
+              </div>
+
+              <!-- 14 Links in EXACT Sequential Order from TrimexConnect Screenshot -->
+              <div class="py-1 space-y-0.5 text-xs font-normal">
+                <a href="https://trimexconnect.com/capstonethesis/login.php" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">1. Research Management System</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/researchmanual/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">2. Research Manual</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/e-data/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">3. Data Science Platform</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/coderkiosk/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">4. CCS Online Compiler</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/iskuling/lms/login.php" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">5. CCS LMS Management</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/voting/acts/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">6. CCS ACTS Voting System</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/voting/acse/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">7. ACSE ACTS Voting System</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/crowntab/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">8. CCS Pageant Management System</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/academy/netsec/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">9. Cybersecurity Arena</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/e-hack/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">10. Educational Cyber Range</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/dikoalam/infosec/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">11. Network Cybersecurity Training Lab</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/dikoalam/infosec/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">12. Cybersecurity Training Lab</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/ojtms/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">13. CCS OJT Monitoring</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+                <a href="https://trimexconnect.com/201ccs/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2 rounded hover:bg-white/10 text-slate-200 hover:text-white transition-colors group/item">
+                  <span class="truncate">14. CCS Student and Faculty Portfolio</span>
+                  <span class="text-slate-400 text-[11px] group-hover/item:text-red-400">↗</span>
+                </a>
+              </div>
+
+              <div class="pt-2 border-t border-slate-800 text-center">
+                <a href="#portal-gateway" class="text-[10px] text-red-300 hover:underline block py-1">View All Systems in Portal Hub ↓</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. ABOUT -->
+        <a href="#about-designer" class="nav-link hover:text-trimex-red transition-colors py-2">
+          ABOUT
+        </a>
+      </nav>
+
+      <!-- Action Buttons & Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- 5. ENROLL NOW! Desktop Button -->
+        <button onclick="openModal('enrollmentModal')" class="hidden sm:inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-md bg-trimex-red hover:bg-trimex-crimsonHover text-white text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow-md active:scale-95 transition-all">
+          ENROLL NOW! →
+        </button>
+
+        <!-- Mobile Drawer Hamburger Button (44px min touch-target) -->
+        <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-md text-slate-800 hover:text-trimex-red hover:bg-slate-100 active:bg-slate-200 transition-colors border border-slate-200 focus:outline-none">
+          <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="closeIcon" class="w-6 h-6 hidden text-trimex-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer (Full Ergonomic Thumb-Zone Dropdown) -->
+    <div id="mobileDrawer" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 sm:px-6 pt-3 pb-6 space-y-2.5 max-h-[85vh] overflow-y-auto custom-scroll shadow-xl transition-all">
+      <a href="#home" onclick="closeMobileMenu()" class="flex items-center justify-between min-h-[44px] py-2.5 px-4 rounded-md font-bold text-sm text-trimex-red bg-trimex-softPink border border-red-100">
+        <span>HOME</span>
+        <span class="text-xs">●</span>
+      </a>
+
+      <!-- Mobile Gazette Section -->
+      <div class="rounded-md border border-slate-200 p-3.5 space-y-2 bg-slate-50">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">GAZETTE PUBLICATIONS</span>
+          <span class="text-[9px] px-1.5 py-0.5 rounded bg-red-100 text-trimex-red font-bold">ONLINE</span>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-1">
+          <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[44px] flex items-center justify-center p-2 rounded bg-white border border-slate-200 text-center font-bold text-xs text-trimex-red hover:bg-trimex-softPink active:scale-95 transition-all">
+            CCS Gazette Vol. 1 ↗
+          </a>
+          <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[44px] flex items-center justify-center p-2 rounded bg-white border border-slate-200 text-center font-bold text-xs text-trimex-red hover:bg-trimex-softPink active:scale-95 transition-all">
+            CCS Gazette Vol. 2 ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile CCS-MS Accordion with all 14 links -->
+      <div class="rounded-md border border-slate-200 p-3.5 space-y-2 bg-slate-50">
+        <button onclick="toggleMobileCcsms()" class="w-full min-h-[44px] flex items-center justify-between text-left focus:outline-none">
+          <span class="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
+            <span>CCS-MS SYSTEMS (14)</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          </span>
+          <span id="mobileCcsmsChevron" class="text-xs text-slate-500 font-bold transition-transform duration-200">▼</span>
+        </button>
+
+        <div id="mobileCcsmsList" class="hidden space-y-1 pt-2 border-t border-slate-200 max-h-64 overflow-y-auto custom-scroll text-xs">
+          <a href="https://trimexconnect.com/capstonethesis/login.php" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>1. Research Management System</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/researchmanual/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>2. Research Manual</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/e-data/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>3. Data Science Platform</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/coderkiosk/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>4. CCS Online Compiler</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/iskuling/lms/login.php" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>5. CCS LMS Management</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/voting/acts/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>6. CCS ACTS Voting System</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/voting/acse/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>7. ACSE ACTS Voting System</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/crowntab/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>8. CCS Pageant Management System</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/academy/netsec/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>9. Cybersecurity Arena</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/e-hack/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>10. Educational Cyber Range</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/dikoalam/infosec/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>11. Network Cybersecurity Training Lab</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/dikoalam/infosec/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>12. Cybersecurity Training Lab</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/ojtms/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>13. CCS OJT Monitoring</span><span class="text-slate-400">↗</span></a>
+          <a href="https://trimexconnect.com/201ccs/" target="_blank" class="flex items-center justify-between min-h-[40px] p-2 rounded hover:bg-slate-200 text-slate-700"><span>14. CCS Student and Faculty Portfolio</span><span class="text-slate-400">↗</span></a>
+        </div>
+      </div>
+
+      <a href="#about-designer" onclick="closeMobileMenu()" class="flex items-center justify-between min-h-[44px] py-2.5 px-4 rounded-md font-semibold text-sm text-slate-700 hover:bg-slate-100">
+        <span>ABOUT DESIGNER</span>
+        <span class="text-xs text-slate-400">↓</span>
+      </a>
+
+      <div class="pt-2">
+        <button onclick="closeMobileMenu(); openModal('enrollmentModal')" class="w-full min-h-[48px] py-3 rounded-md bg-trimex-red active:bg-trimex-crimsonHover text-white text-xs font-bold uppercase tracking-wider text-center shadow-md flex items-center justify-center gap-2">
+          <span>ENROLL NOW!</span>
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- ==================== HERO SECTION (Fluid on Mobile, Tablet & Desktop) ==================== -->
+    <section id="home" class="relative pt-8 sm:pt-14 md:pt-20 pb-12 sm:pb-16 md:pb-24 overflow-hidden bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 items-center">
+          
+          <!-- Editorial Copy Column -->
+          <div class="lg:col-span-6 space-y-4 sm:space-y-6 text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-md bg-trimex-lightRed border border-red-200 text-trimex-red text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+              <span class="w-1.5 h-1.5 rounded-full bg-trimex-red animate-ping"></span>
+              COLLEGE OF COMPUTER STUDIES
+            </div>
+
+            <h1 class="font-serif text-3xl xs:text-4xl sm:text-5xl lg:text-[54px] font-bold text-trimex-onyx leading-[1.15] sm:leading-[1.12] tracking-tight">
+              Shaping Future Tech Leaders &amp; Innovators
+            </h1>
+
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-xl font-normal">
+              Turn curiosity into capacity. Our outcome-based computing programs connect rigorous theoretical foundations with hands-on labs, purposeful projects, and real-world problem solving.
+            </p>
+
+            <!-- Dual Responsive Buttons (Touch Ergonomic on Mobile) -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+              <a href="#curriculum" class="min-h-[46px] inline-flex items-center justify-center px-7 py-3 rounded-md bg-trimex-red hover:bg-trimex-crimsonHover text-white text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow-md active:scale-95 transition-all text-center">
+                Explore Programs
+              </a>
+              <a href="#portal-gateway" class="min-h-[46px] inline-flex items-center justify-center px-6 py-3 rounded-md border border-slate-300 hover:border-trimex-onyx bg-white text-trimex-onyx text-xs font-bold uppercase tracking-wider hover:bg-slate-50 active:scale-95 transition-all text-center">
+                <span>CCS-MS Portal</span>
+                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+
+            <!-- Value Proposition Statement -->
+            <div class="pt-3 sm:pt-4 flex items-center gap-2.5 sm:gap-3 text-[11px] sm:text-xs text-slate-500 font-medium border-t border-slate-100">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              <span class="leading-tight">CHED-Aligned Curricula • Outcome-Based Computing • Industry Capstone Links</span>
+            </div>
+          </div>
+
+          <!-- Hero Media Column with Floating Glass Badge -->
+          <div class="lg:col-span-6 relative mt-4 lg:mt-0">
+            <div class="relative rounded-lg overflow-hidden shadow-lg sm:shadow-xl border border-slate-200">
+              <img 
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" 
+                alt="Trimex College of Computer Studies students collaborating in laboratory"
+                class="w-full h-[250px] xs:h-[300px] sm:h-[400px] md:h-[460px] object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                onerror="this.src='https://placehold.co/1200x800/14171A/FFFFFF?text=Trimex+CCS+Computing+Laboratory'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent"></div>
+
+              <!-- Floating Micro-badge for 98% Practical Labs (Compact on Mobile) -->
+              <div class="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-auto glass-pill rounded-md p-2.5 sm:p-3.5 shadow-lg border border-white/60 flex items-center gap-2.5 sm:gap-3">
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-md bg-trimex-red/10 text-trimex-red flex items-center justify-center shrink-0">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-serif font-bold text-xs sm:text-sm text-slate-900">98% Practical Labs</h4>
+                  <p class="text-[10px] sm:text-xs text-slate-600">Pure immersive engineering &amp; software practice</p>
+                </div>
+              </div>
+            </div>
+            <!-- Decorative Accent Backdrop -->
+            <div class="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-36 h-36 sm:w-48 sm:h-48 bg-trimex-softPink rounded-md -z-10 blur-xl opacity-70"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== METRICS STRIP (2x2 Mobile, 4x1 Desktop) ==================== -->
+    <section class="border-y border-trimex-borderSubtle bg-trimex-surface py-6 sm:py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+          
+          <div class="space-y-0.5 sm:space-y-1 pl-2.5 sm:pl-3 border-l-2 border-trimex-red">
+            <div class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-trimex-onyx">2 <span class="text-[10px] sm:text-xs font-sans font-semibold text-slate-500 uppercase tracking-wider block sm:inline sm:ml-1">Degrees</span></div>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-medium">BSIT &amp; BSCS Curricula</p>
+          </div>
+
+          <div class="space-y-0.5 sm:space-y-1 pl-2.5 sm:pl-3 border-l-2 border-trimex-red">
+            <div class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-trimex-onyx">5 <span class="text-[10px] sm:text-xs font-sans font-semibold text-slate-500 uppercase tracking-wider block sm:inline sm:ml-1">Tracks</span></div>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Specialized Computing Fields</p>
+          </div>
+
+          <div class="space-y-0.5 sm:space-y-1 pl-2.5 sm:pl-3 border-l-2 border-trimex-red">
+            <div class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-trimex-red">100% <span class="text-[10px] sm:text-xs font-sans font-semibold text-slate-500 uppercase tracking-wider block sm:inline sm:ml-1">Outcome</span></div>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Hands-on Industry Alignment</p>
+          </div>
+
+          <div class="space-y-0.5 sm:space-y-1 pl-2.5 sm:pl-3 border-l-2 border-trimex-red">
+            <div class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-trimex-onyx">24/7 <span class="text-[10px] sm:text-xs font-sans font-semibold text-slate-500 uppercase tracking-wider block sm:inline sm:ml-1">Portal</span></div>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-medium">TrimexConnect &amp; CCS-MS Access</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACADEMIC CURRICULA ==================== -->
+    <section id="curriculum" class="py-12 sm:py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-4 border-b border-slate-100 pb-5 sm:pb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-trimex-red">ACADEMIC DISCIPLINES</span>
+            <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-trimex-onyx mt-1">Find your path in computing.</h2>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 max-w-md font-medium">
+            Two degrees. Five focused specializations. An identical commitment to learning by doing.
+          </p>
+        </div>
+
+        <!-- 2 Comparison Cards (Stacked on Mobile, Side-by-Side on Desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          
+          <!-- Card 1: BS Information Technology -->
+          <div class="rounded-lg border border-trimex-borderSubtle bg-white p-5 sm:p-7 md:p-8 shadow-kent hover:shadow-elevated transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-trimex-red transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="w-9 h-9 sm:w-10 sm:h-10 rounded-md bg-trimex-lightRed text-trimex-red flex items-center justify-center font-serif font-bold text-base sm:text-lg">
+                  IT
+                </span>
+                <span class="text-[10px] sm:text-[11px] uppercase font-bold tracking-widest text-slate-400">CHED RECOGNIZED</span>
+              </div>
+
+              <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-trimex-onyx group-hover:text-trimex-red transition-colors">
+                BS Information Technology
+              </h3>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Create the applications, experiences, and systems that connect people. Build practical skills for present-day tech industries.
+              </p>
+
+              <!-- Specialization Tracks with Descriptions -->
+              <div class="pt-2 space-y-2.5">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1">SPECIALIZATION TRACKS</span>
+                
+                <div class="p-3 rounded-md bg-slate-50 border border-slate-100 hover:border-red-200 transition-colors">
+                  <h5 class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-trimex-red shrink-0"></span>
+                    Mobile and Web Development
+                  </h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">
+                    Designing responsive web applications, modern front-end frameworks, and cross-platform mobile software.
+                  </p>
+                </div>
+
+                <div class="p-3 rounded-md bg-slate-50 border border-slate-100 hover:border-red-200 transition-colors">
+                  <h5 class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-trimex-red shrink-0"></span>
+                    Multimedia Arts and Animation
+                  </h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">
+                    Mastering digital storytelling, 2D/3D visual modeling, interactive interface design, and motion graphics.
+                  </p>
+                </div>
+
+                <div class="p-3 rounded-md bg-slate-50 border border-slate-100 hover:border-red-200 transition-colors">
+                  <h5 class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-trimex-red shrink-0"></span>
+                    Network and System Administration
+                  </h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">
+                    Configuring enterprise server environments, secure cloud infrastructures, routing protocols, and IT operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Action -->
+            <div class="pt-5 mt-5 border-t border-slate-100 flex flex-col xs:flex-row xs:items-center justify-between gap-2">
+              <button onclick="showCurriculumDetails('BSIT')" class="min-h-[44px] text-xs font-bold uppercase tracking-wider text-trimex-red group-hover:underline flex items-center gap-1.5 text-left">
+                <span>View Full BSIT Structure</span>
+                <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-400">4 Years • 8 Semesters</span>
+            </div>
+          </div>
+
+          <!-- Card 2: BS Computer Science -->
+          <div class="rounded-lg border border-trimex-borderSubtle bg-white p-5 sm:p-7 md:p-8 shadow-kent hover:shadow-elevated transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-trimex-onyx transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+
+            <div class="space-y-3.5 sm:space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="w-9 h-9 sm:w-10 sm:h-10 rounded-md bg-slate-100 text-slate-800 flex items-center justify-center font-serif font-bold text-base sm:text-lg">
+                  CS
+                </span>
+                <span class="text-[10px] sm:text-[11px] uppercase font-bold tracking-widest text-slate-400">CHED RECOGNIZED</span>
+              </div>
+
+              <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-trimex-onyx group-hover:text-trimex-red transition-colors">
+                BS Computer Science
+              </h3>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Explore the science behind intelligent solutions. Develop strong foundations in algorithms, secure computing, and data-driven discovery.
+              </p>
+
+              <!-- Specialization Tracks with Descriptions -->
+              <div class="pt-2 space-y-2.5">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1">SPECIALIZATION TRACKS</span>
+
+                <div class="p-3 rounded-md bg-slate-50 border border-slate-100 hover:border-slate-300 transition-colors">
+                  <h5 class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-trimex-onyx shrink-0"></span>
+                    Cybersecurity
+                  </h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">
+                    Securing critical computing systems, ethical vulnerability testing, threat defense, and defensive cryptography.
+                  </p>
+                </div>
+
+                <div class="p-3 rounded-md bg-slate-50 border border-slate-100 hover:border-slate-300 transition-colors">
+                  <h5 class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-trimex-onyx shrink-0"></span>
+                    Data Science
+                  </h5>
+                  <p class="text-[11px] text-slate-500 mt-1 leading-snug">
+                    Building predictive analytical models, large-scale dataset mining, machine learning pipelines, and statistics.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Action -->
+            <div class="pt-5 mt-5 border-t border-slate-100 flex flex-col xs:flex-row xs:items-center justify-between gap-2">
+              <button onclick="showCurriculumDetails('BSCS')" class="min-h-[44px] text-xs font-bold uppercase tracking-wider text-trimex-onyx group-hover:text-trimex-red group-hover:underline flex items-center gap-1.5 text-left">
+                <span>View Full BSCS Structure</span>
+                <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+              <span class="text-[11px] sm:text-xs font-semibold text-slate-400">4 Years • 8 Semesters</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT THE DESIGNER (Permanent Executive Spotlight) ==================== -->
+    <section id="about-designer" class="py-12 sm:py-16 md:py-24 bg-trimex-softPink/60 border-y border-red-100/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Editorial Section Badge -->
+        <div class="text-center max-w-xl mx-auto mb-8 sm:mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-trimex-red">ABOUT THE FRONT-END DESIGNER</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-trimex-onyx mt-1">Crafted with Purpose &amp; Precision</h2>
+          <p class="text-xs text-slate-500 mt-1.5 sm:mt-2 font-medium">Midterm Examination Project — Trimex Colleges College of Computer Studies</p>
+        </div>
+
+        <!-- The Executive Dossier Card -->
+        <div class="bg-white rounded-lg p-5 sm:p-8 md:p-10 shadow-lg border border-red-100 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+            
+            <!-- Left Profile Column with Permanent High-Res Image -->
+            <div class="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left space-y-3.5 sm:space-y-4 border-b lg:border-b-0 lg:border-r border-slate-100 pb-6 lg:pb-0 lg:pr-8">
+              
+              <!-- Portrait Frame with Exact Permanent Image File -->
+              <div class="relative">
+                <div class="w-32 h-44 xs:w-36 xs:h-48 sm:w-40 sm:h-52 rounded-md overflow-hidden border-2 border-red-200 bg-slate-100 shadow-md relative flex items-center justify-center">
+                  
+                  <!-- Permanent Primary Portrait Photo -->
+                  <img 
+                    id="designerPortraitImg"
+                    src="902b48e7-d2db-4b21-887a-e8cab785bb5c.jpg" 
+                    alt="Aizen Claire Cruz - Front-End Designer" 
+                    class="w-full h-full object-cover object-center transition-transform hover:scale-105 duration-500"
+                    onerror="this.src='4f7731b6-9703-4e8c-bdcc-c52acab71f17.jpg'; this.onerror=function(){ this.style.display='none'; document.getElementById('designerMonogramFallback').classList.remove('hidden'); }"
+                  >
+
+                  <!-- Elegant Monogram Fallback if image file is not found -->
+                  <div id="designerMonogramFallback" class="hidden absolute inset-0 bg-gradient-to-br from-red-50 to-red-100 flex flex-col items-center justify-center text-center p-3">
+                    <span class="font-serif font-bold text-3xl text-trimex-red">ACC</span>
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-slate-600 mt-1">Aizen Claire Cruz</span>
+                  </div>
+                </div>
+
+                <div class="absolute -bottom-2 -right-2 bg-emerald-500 text-white rounded-full p-1 border-2 border-white shadow-sm" title="Verified Designer">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+              </div>
+
+              <div>
+                <span class="text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-trimex-red block">FRONT-END DESIGNER &amp; DEVELOPER</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-trimex-onyx mt-1">Aizen Claire Cruz</h3>
+                <p class="text-xs sm:text-sm font-semibold text-slate-500 mt-0.5">BS Information Technology — 3rd Year</p>
+              </div>
+
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-red-50 text-trimex-red text-[11px] sm:text-xs font-semibold border border-red-200">
+                <span class="w-2 h-2 rounded-full bg-trimex-red"></span>
+                Official Midterm Examination Project
+              </div>
+            </div>
+
+            <!-- Right Project Breakdown & Rationale -->
+            <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div class="p-3.5 sm:p-4 rounded-md bg-slate-50 border border-slate-100">
+                  <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">COURSE / SUBJECT</span>
+                  <p class="text-xs sm:text-sm font-bold text-slate-800 mt-0.5 sm:mt-1">MOBILE UI/UX DESIGN LAB</p>
+                </div>
+
+                <div class="p-3.5 sm:p-4 rounded-md bg-slate-50 border border-slate-100">
+                  <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">PROFESSOR / ADVISER</span>
+                  <p class="text-xs sm:text-sm font-bold text-slate-800 mt-0.5 sm:mt-1">Dr. Louie Agustin</p>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <span class="text-[10px] uppercase font-bold tracking-wider text-trimex-red block">PROJECT CONCEPT &amp; RATIONALE</span>
+                <h4 class="font-serif text-base sm:text-lg font-semibold text-slate-900 leading-snug">
+                  A modernized, student-centered digital interface designed for the Trimex CCS community.
+                </h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Developed as an outcome-based redesign of TrimexConnect, this web interface focuses on clear visual hierarchy, accessible navigation, and rapid portal discoverability for computing students and faculty. Tailored specifically to meet modern mobile UI/UX standards, it incorporates responsive touch ergonomics, high-contrast typography, and streamlined workflows across all official college management systems.
+                </p>
+              </div>
+
+              <div class="pt-1 flex flex-wrap gap-2 text-[10px] sm:text-[11px] font-semibold text-slate-600">
+                <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200">1440px Desktop Grid</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200">390px Mobile Viewport Ready</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200">Fast Single-File Architecture</span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== THE CCS GAZETTE ==================== -->
+    <section id="gazette" class="py-12 sm:py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-100 pb-5">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-trimex-red">IDEAS, PEOPLE &amp; POSSIBILITIES</span>
+            <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-trimex-onyx mt-1">The CCS Gazette.</h2>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+            <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[42px] px-3.5 sm:px-4 py-2 rounded-md border border-red-200 bg-trimex-softPink text-xs font-bold text-trimex-red hover:bg-red-100 active:scale-95 transition-all flex items-center gap-1.5">
+              <span>Read Gazette Vol. 1</span>
+              <span>↗</span>
+            </a>
+            <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[42px] px-3.5 sm:px-4 py-2 rounded-md bg-trimex-red text-white text-xs font-bold hover:bg-trimex-crimsonHover active:scale-95 transition-all flex items-center gap-1.5">
+              <span>Read Gazette Vol. 2</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 Journalistic Stories -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          
+          <article class="group flex flex-col justify-between space-y-3.5 sm:space-y-4">
+            <div class="space-y-3 sm:space-y-4">
+              <div class="rounded-md overflow-hidden aspect-[16/10] bg-slate-100 relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80" 
+                  alt="Annual Hackathon at Trimex CCS" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/700x450/14171A/FFFFFF?text=Hackathon+Challenge'"
+                >
+                <span class="absolute top-2.5 left-2.5 bg-white/90 backdrop-blur-sm text-[9px] sm:text-[10px] font-bold uppercase px-2 sm:px-2.5 py-0.5 sm:py-1 rounded text-slate-800">
+                  CAMPUS INNOVATION
+                </span>
+              </div>
+              <div class="text-[10px] sm:text-[11px] font-medium text-slate-400">VOLUME 2 • 4 MIN READ</div>
+              <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900 group-hover:text-trimex-red transition-colors leading-snug">
+                One challenge. Many brilliant possibilities.
+              </h3>
+              <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                Student engineering squads prototype full-stack solutions to solve campus logistics, resource tracking, and local community data challenges during the CCS HackFest.
+              </p>
+            </div>
+            <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[44px] inline-flex items-center text-xs font-bold uppercase tracking-wider text-trimex-red group-hover:translate-x-1 transition-transform">
+              <span>Read Full Story →</span>
+            </a>
+          </article>
+
+          <article class="group flex flex-col justify-between space-y-3.5 sm:space-y-4">
+            <div class="space-y-3 sm:space-y-4">
+              <div class="rounded-md overflow-hidden aspect-[16/10] bg-slate-100 relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=700&q=80" 
+                  alt="Trimex CCS Technology Keynote" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/700x450/14171A/FFFFFF?text=Keynote+Summit'"
+                >
+                <span class="absolute top-2.5 left-2.5 bg-white/90 backdrop-blur-sm text-[9px] sm:text-[10px] font-bold uppercase px-2 sm:px-2.5 py-0.5 sm:py-1 rounded text-slate-800">
+                  TECH SUMMIT
+                </span>
+              </div>
+              <div class="text-[10px] sm:text-[11px] font-medium text-slate-400">VOLUME 1 • 3 MIN READ</div>
+              <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900 group-hover:text-trimex-red transition-colors leading-snug">
+                The conversation shaping tomorrow's technology.
+              </h3>
+              <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                Guest keynote speakers and alumni leaders dissect emerging paradigms in edge computing, cloud systems, and proactive cybersecurity architectures with 3rd and 4th-year cohorts.
+              </p>
+            </div>
+            <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[44px] inline-flex items-center text-xs font-bold uppercase tracking-wider text-trimex-red group-hover:translate-x-1 transition-transform">
+              <span>Read Full Story →</span>
+            </a>
+          </article>
+
+          <article class="group flex flex-col justify-between space-y-3.5 sm:space-y-4">
+            <div class="space-y-3 sm:space-y-4">
+              <div class="rounded-md overflow-hidden aspect-[16/10] bg-slate-100 relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=80" 
+                  alt="Students presenting computing capstone" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/700x450/14171A/FFFFFF?text=Capstone+Research'"
+                >
+                <span class="absolute top-2.5 left-2.5 bg-white/90 backdrop-blur-sm text-[9px] sm:text-[10px] font-bold uppercase px-2 sm:px-2.5 py-0.5 sm:py-1 rounded text-slate-800">
+                  CAPSTONE EDITION
+                </span>
+              </div>
+              <div class="text-[10px] sm:text-[11px] font-medium text-slate-400">RESEARCH • 5 MIN READ</div>
+              <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900 group-hover:text-trimex-red transition-colors leading-snug">
+                From the lab to something that matters.
+              </h3>
+              <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                A look inside how senior capstone teams develop real-world clinic management systems and micro-finance mobile applications deployed across partner offices in Region IV-A.
+              </p>
+            </div>
+            <a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[44px] inline-flex items-center text-xs font-bold uppercase tracking-wider text-trimex-red group-hover:translate-x-1 transition-transform">
+              <span>Read Full Story →</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CCS-MS 14-PORTAL GATEWAY ==================== -->
+    <section id="portal-gateway" class="py-12 sm:py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-lg bg-trimex-onyx text-white p-5 sm:p-8 md:p-10 shadow-2xl relative overflow-hidden">
+          
+          <!-- Subtle Grid -->
+          <div class="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+          <div class="relative z-10 space-y-6 sm:space-y-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 border-b border-slate-800 pb-5 sm:pb-6">
+              <div class="space-y-2 sm:space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-red-950/80 border border-red-800/60 text-[9px] sm:text-[10px] uppercase font-bold tracking-widest text-red-300">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  CCS-MS • OFFICIAL TRIMEXCONNECT MANAGEMENT SUITE
+                </div>
+                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">Your campus systems, connected.</h2>
+                <p class="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+                  All 14 official management modules and specialized computing labs of the College of Computer Studies, ordered exactly as featured on TrimexConnect. Click any system to launch its secure session.
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3 shrink-0">
+                <a href="https://trimexcolleges.edu.ph/online-enrollment" target="_blank" rel="noopener noreferrer" class="min-h-[44px] inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 rounded-md bg-white text-slate-900 hover:bg-slate-100 text-xs font-bold uppercase tracking-wider transition-all active:scale-95 shadow-lg">
+                  Launch Main Portal ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- 14 Interactive System Tiles in Exact Screenshot Order (1 Col Mobile, 2 Col Tablet, 4 Col Desktop) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-3.5">
+              
+              <!-- 1. Research Management System -->
+              <a href="https://trimexconnect.com/capstonethesis/login.php" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">01 • RESEARCH</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">Research Management System</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/capstonethesis/login.php</p>
+                </div>
+              </a>
+
+              <!-- 2. Research Manual -->
+              <a href="https://trimexconnect.com/researchmanual/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">02 • GUIDELINES</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">Research Manual</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/researchmanual/</p>
+                </div>
+              </a>
+
+              <!-- 3. Data Science Platform -->
+              <a href="https://trimexconnect.com/e-data/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">03 • ANALYTICS</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">Data Science Platform</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/e-data/</p>
+                </div>
+              </a>
+
+              <!-- 4. CCS Online Compiler -->
+              <a href="https://trimexconnect.com/coderkiosk/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">04 • CODING</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">CCS Online Compiler</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/coderkiosk/</p>
+                </div>
+              </a>
+
+              <!-- 5. CCS LMS Management -->
+              <a href="https://trimexconnect.com/iskuling/lms/login.php" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">05 • ACADEMICS</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">CCS LMS Management</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/iskuling/lms/login.php</p>
+                </div>
+              </a>
+
+              <!-- 6. CCS ACTS Voting System -->
+              <a href="https://trimexconnect.com/voting/acts/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">06 • ELECTIONS</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">CCS ACTS Voting System</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/voting/acts/</p>
+                </div>
+              </a>
+
+              <!-- 7. ACSE ACTS Voting System -->
+              <a href="https://trimexconnect.com/voting/acse/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">07 • COUNCIL</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">ACSE ACTS Voting System</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/voting/acse/</p>
+                </div>
+              </a>
+
+              <!-- 8. CCS Pageant Management System -->
+              <a href="https://trimexconnect.com/crowntab/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">08 • EVENTS</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">CCS Pageant Management System</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/crowntab/</p>
+                </div>
+              </a>
+
+              <!-- 9. Cybersecurity Arena -->
+              <a href="https://trimexconnect.com/academy/netsec/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">09 • SECURITY</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">Cybersecurity Arena</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/academy/netsec/</p>
+                </div>
+              </a>
+
+              <!-- 10. Educational Cyber Range -->
+              <a href="https://trimexconnect.com/e-hack/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">10 • CYBER RANGE</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">Educational Cyber Range</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/e-hack/</p>
+                </div>
+              </a>
+
+              <!-- 11. Network Cybersecurity Training Lab -->
+              <a href="https://trimexconnect.com/dikoalam/infosec/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">11 • NETWORK LAB</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">Network Cybersecurity Training Lab</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/dikoalam/infosec/</p>
+                </div>
+              </a>
+
+              <!-- 12. Cybersecurity Training Lab -->
+              <a href="https://trimexconnect.com/dikoalam/infosec/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">12 • INFOSEC LAB</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">Cybersecurity Training Lab</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/dikoalam/infosec/</p>
+                </div>
+              </a>
+
+              <!-- 13. CCS OJT Monitoring -->
+              <a href="https://trimexconnect.com/ojtms/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">13 • PRACTICUM</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">CCS OJT Monitoring</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/ojtms/</p>
+                </div>
+              </a>
+
+              <!-- 14. CCS Student and Faculty Portfolio -->
+              <a href="https://trimexconnect.com/201ccs/" target="_blank" rel="noopener noreferrer" class="min-h-[72px] p-3 sm:p-3.5 rounded-md bg-white/5 hover:bg-white/10 border border-white/10 hover:border-red-500/50 active:scale-[0.98] transition-all flex flex-col justify-between group">
+                <div class="flex items-start justify-between">
+                  <span class="text-[9px] sm:text-[10px] font-mono text-red-400 font-bold">14 • 201 FILES</span>
+                  <span class="text-slate-400 text-xs group-hover:text-red-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                </div>
+                <div class="mt-2">
+                  <h4 class="text-xs font-bold text-white group-hover:text-red-300 transition-colors">CCS Student and Faculty Portfolio</h4>
+                  <p class="text-[10px] text-slate-400 font-mono truncate mt-0.5">/201ccs/</p>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ADMISSIONS CTA BANNER ==================== -->
+    <section class="py-10 sm:py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-lg bg-gradient-to-r from-trimex-red via-red-800 to-trimex-crimsonHover p-6 sm:p-8 md:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-2 text-center md:text-left">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-red-200">YOUR FUTURE STARTS WITH A SINGLE STEP</span>
+            <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold">Build what comes next. Begin at Trimex.</h2>
+            <p class="text-xs sm:text-sm text-red-100 max-w-lg font-light">
+              Bring your ambition. Find your community. Start your computing journey today with our online admissions portal.
+            </p>
+          </div>
+          <button onclick="openModal('enrollmentModal')" class="w-full sm:w-auto min-h-[46px] shrink-0 px-7 py-3 rounded-md bg-white text-trimex-red hover:bg-slate-50 text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg active:scale-95 transition-all text-center">
+            Enroll Online Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER (Responsive Grid) ==================== -->
+  <footer class="bg-trimex-onyx text-slate-400 text-xs pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Col 1: Identity & Seal -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-md border border-red-500/40 flex items-center justify-center bg-white p-1">
+              <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+                <rect x="10" y="38" width="80" height="52" fill="#A31D24" />
+                <rect x="23.5" y="10" width="11" height="46" fill="#14171A" />
+                <rect x="44.5" y="10" width="11" height="46" fill="#14171A" />
+                <rect x="65.5" y="10" width="11" height="46" fill="#14171A" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-sm text-white">TRIMEX CCS</h4>
+              <p class="text-[10px] uppercase tracking-wider text-slate-500">College of Computer Studies</p>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-400">
+            A community of collaborative, purpose-led builders and computing innovators. Rooted in outcome-based technical education.
+          </p>
+          <div class="text-[11px] text-slate-500">
+            CHED Recognized Computing Programs
+          </div>
+          <div>
+            <a href="https://www.facebook.com/TrimexCollegesOfficial" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-white transition-colors group">
+              <svg class="w-4 h-4 text-[#1877F2] fill-current shrink-0" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span class="group-hover:underline">Trimex Colleges Official FB ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider">EXPLORE CCS</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#home" class="min-h-[32px] inline-flex items-center hover:text-white transition-colors">Home</a></li>
+            <li><a href="https://trimexconnect.com/ccs/gazette/" target="_blank" rel="noopener noreferrer" class="min-h-[32px] inline-flex items-center hover:text-white transition-colors gap-1">CCS Gazette ↗</a></li>
+            <li><a href="#portal-gateway" class="min-h-[32px] inline-flex items-center hover:text-white transition-colors">CCS-MS Portal (14 Systems)</a></li>
+            <li><a href="#about-designer" class="min-h-[32px] inline-flex items-center hover:text-white transition-colors">About the Project</a></li>
+            <li><button onclick="openModal('enrollmentModal')" class="min-h-[32px] inline-flex items-center hover:text-white text-left transition-colors">Enroll Online</button></li>
+            <li><a href="https://www.facebook.com/trimex.ccs" target="_blank" rel="noopener noreferrer" class="min-h-[32px] inline-flex items-center hover:text-white transition-colors gap-1 text-slate-400">Official Facebook ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: BSIT Tracks -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider">INFORMATION TECHNOLOGY</h4>
+          <ul class="space-y-2">
+            <li><span class="text-slate-300">BSIT Degree Overview</span></li>
+            <li><span class="text-slate-500 hover:text-slate-400">Mobile &amp; Web Development</span></li>
+            <li><span class="text-slate-500 hover:text-slate-400">Multimedia Arts &amp; Animation</span></li>
+            <li><span class="text-slate-500 hover:text-slate-400">Network &amp; System Administration</span></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: BSCS Tracks & Campus Info -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider">COMPUTER SCIENCE &amp; CAMPUS</h4>
+          <ul class="space-y-2">
+            <li><span class="text-slate-300">BSCS Degree Overview</span></li>
+            <li><span class="text-slate-500 hover:text-slate-400">Cybersecurity Discipline</span></li>
+            <li><span class="text-slate-500 hover:text-slate-400">Data Science &amp; Intelligence</span></li>
+            <li class="pt-2.5 space-y-1 border-t border-slate-800/80">
+              <span class="text-[10px] uppercase font-bold tracking-wider text-red-400 block">Official Campus Locations:</span>
+              <span class="text-[11px] text-slate-400 block"><strong>Main:</strong> Trojan Bldg., A. Bonifacio St., Brgy. Poblacion, Biñan City, 4024 Laguna</span>
+              <span class="text-[11px] text-slate-500 block"><strong>Annex:</strong> 3rd Floor, Morales Bldg., Manila South Rd., Biñan City</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+        <p>© 2026 Trimex Colleges — College of Computer Studies. All rights reserved.</p>
+        <p class="text-slate-400 text-center sm:text-right">
+          Designed by <span class="text-white font-medium">Aizen Claire Cruz</span> | Advised by <span class="text-white font-medium">Dr. Louie Agustin</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS (Touch-Optimized) ==================== -->
+
+  <!-- 1. ENROLLMENT APPLICATION MODAL -->
+  <div id="enrollmentModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-lg max-w-lg w-full p-5 sm:p-8 shadow-2xl border border-slate-100 max-h-[92vh] overflow-y-auto custom-scroll relative">
+      
+      <!-- Close Button (Thumb-Target 44px) -->
+      <button onclick="closeModal('enrollmentModal')" class="absolute top-4 right-4 w-10 h-10 rounded-md bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-600 flex items-center justify-center transition-colors focus:outline-none">
+        ✕
+      </button>
+
+      <div class="space-y-1.5 sm:space-y-2 mb-5 sm:mb-6 pr-8">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-trimex-red">ADMISSIONS 2026-2027</span>
+        <h3 class="font-serif text-xl sm:text-2xl font-bold text-trimex-onyx">Enrollment Application</h3>
+        <p class="text-xs text-slate-500">Fill in your information to register for the College of Computer Studies at Trimex Colleges.</p>
+      </div>
+
+      <form id="enrollmentForm" onsubmit="handleEnrollmentSubmit(event)" class="space-y-3.5 sm:space-y-4">
+        <div class="p-3 sm:p-3.5 rounded-md bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-start gap-2.5">
+          <svg class="w-4 h-4 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <div>
+            <span class="font-bold block">Admissions Options</span>
+            Submit your information below for instant processing, or proceed directly to the
+            <a href="https://trimexcolleges.edu.ph/online-enrollment" target="_blank" rel="noopener noreferrer" class="font-bold underline text-trimex-red hover:text-trimex-crimsonHover">Official Trimex Online Portal ↗</a>.
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Full Applicant Name</label>
+          <input type="text" required placeholder="e.g. Juan Dela Cruz" class="w-full px-3.5 py-2.5 sm:py-2 rounded-md border border-slate-200 text-sm sm:text-xs focus:outline-none focus:border-trimex-red focus:ring-1 focus:ring-trimex-red">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+            <input type="email" required placeholder="juan@example.com" class="w-full px-3.5 py-2.5 sm:py-2 rounded-md border border-slate-200 text-sm sm:text-xs focus:outline-none focus:border-trimex-red focus:ring-1 focus:ring-trimex-red">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Contact Number</label>
+            <input type="tel" required placeholder="0917-000-0000" class="w-full px-3.5 py-2.5 sm:py-2 rounded-md border border-slate-200 text-sm sm:text-xs focus:outline-none focus:border-trimex-red focus:ring-1 focus:ring-trimex-red">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Select Intended Degree Program</label>
+          <select required class="w-full px-3.5 py-2.5 sm:py-2 rounded-md border border-slate-200 text-sm sm:text-xs focus:outline-none focus:border-trimex-red focus:ring-1 focus:ring-trimex-red bg-white">
+            <option value="">-- Choose Program --</option>
+            <option value="BSIT-MobileWeb">BS Information Technology (Mobile and Web Development)</option>
+            <option value="BSIT-Multimedia">BS Information Technology (Multimedia Arts and Animation)</option>
+            <option value="BSIT-NetAdmin">BS Information Technology (Network and System Admin)</option>
+            <option value="BSCS-CyberSec">BS Computer Science (Cybersecurity)</option>
+            <option value="BSCS-DataSci">BS Computer Science (Data Science)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Applicant Status</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <label class="min-h-[44px] flex items-center justify-center gap-1.5 p-2 border border-slate-200 rounded-md text-xs cursor-pointer hover:bg-slate-50 active:bg-slate-100">
+              <input type="radio" name="student_type" value="freshman" checked class="text-trimex-red focus:ring-trimex-red">
+              <span class="text-[11px] sm:text-xs">Freshman</span>
+            </label>
+            <label class="min-h-[44px] flex items-center justify-center gap-1.5 p-2 border border-slate-200 rounded-md text-xs cursor-pointer hover:bg-slate-50 active:bg-slate-100">
+              <input type="radio" name="student_type" value="transferee" class="text-trimex-red focus:ring-trimex-red">
+              <span class="text-[11px] sm:text-xs">Transferee</span>
+            </label>
+            <label class="min-h-[44px] flex items-center justify-center gap-1.5 p-2 border border-slate-200 rounded-md text-xs cursor-pointer hover:bg-slate-50 active:bg-slate-100">
+              <input type="radio" name="student_type" value="old_student" class="text-trimex-red focus:ring-trimex-red">
+              <span class="text-[11px] sm:text-xs">Old Student</span>
+            </label>
+            <label class="min-h-[44px] flex items-center justify-center gap-1.5 p-2 border border-slate-200 rounded-md text-xs cursor-pointer hover:bg-slate-50 active:bg-slate-100">
+              <input type="radio" name="student_type" value="second_degree" class="text-trimex-red focus:ring-trimex-red">
+              <span class="text-[11px] sm:text-xs">2nd Deg.</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="pt-3 flex flex-col sm:flex-row gap-2.5">
+          <button type="submit" class="min-h-[46px] flex-1 py-3 rounded-md bg-trimex-red hover:bg-trimex-crimsonHover active:scale-95 text-white text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow-md transition-all text-center">
+            Submit Application
+          </button>
+          <a href="https://trimexcolleges.edu.ph/online-enrollment" target="_blank" rel="noopener noreferrer" class="min-h-[46px] inline-flex items-center justify-center px-5 py-3 rounded-md border border-slate-300 hover:border-slate-800 active:scale-95 text-slate-800 text-xs font-bold uppercase tracking-wider text-center transition-all">
+            Official Portal ↗
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. CURRICULUM MODAL -->
+  <div id="curriculumModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-lg max-w-2xl w-full p-5 sm:p-8 shadow-2xl border border-slate-100 max-h-[92vh] overflow-y-auto custom-scroll relative">
+      <button onclick="closeModal('curriculumModal')" class="absolute top-4 right-4 w-10 h-10 rounded-md bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-600 flex items-center justify-center transition-colors focus:outline-none">
+        ✕
+      </button>
+      <div id="curriculumModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none max-w-[92vw] sm:max-w-md">
+    <div class="bg-slate-900 text-white px-4 sm:px-5 py-3 sm:py-3.5 rounded-md shadow-2xl border border-slate-700 flex items-center gap-3">
+      <div class="w-7 h-7 rounded-md bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">✓</div>
+      <div>
+        <h5 class="text-xs font-bold" id="toastTitle">Application Received</h5>
+        <p class="text-[11px] text-slate-300" id="toastMessage">Your details have been registered.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- External Separated JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
